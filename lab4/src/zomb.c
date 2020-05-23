@@ -17,5 +17,5 @@ int main()
     }
     return 0;
 }
-//to find zombie process (while program is runing)
+//to find zombie process while program is runing
 //open new terminal window and write this command:    top | grep zombie
