@@ -1,15 +1,3 @@
-/********************************************************
- * An example source module to accompany...
- *
- * "Using POSIX Threads: Programming with Pthreads"
- *     by Brad nichols, Dick Buttlar, Jackie Farrell
- *     O'Reilly & Associates, Inc.
- *  Modified by A.Kostin
- ********************************************************
- * mutex.c
- *
- * Simple multi-threaded example with a mutex lock.
- */
 #include <errno.h>
 #include <pthread.h>
 #include <stdio.h>
@@ -97,6 +85,4 @@ void do_wrap_up(int counter)
 {
   int total;
   printf("All done, counter = %d\n", counter);
-  /* outputs counter = 100 (from 0 to 100)
-  because we protect access to a shared resourse (counter) by using a mutex */
 }
