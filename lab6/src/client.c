@@ -230,7 +230,7 @@ int main(int argc, char **argv)
     pthread_mutex_lock(&mut);
     int between_answer=0;
     pthread_join(threads[i],(void**)&between_answer);
-    answer =  MultModulo(answer, between_answer, mod);
+    answer =  Multi(answer, between_answer, mod);
     pthread_mutex_unlock(&mut);
   }
 
