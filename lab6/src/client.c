@@ -14,7 +14,7 @@
 
 #include <pthread.h>
 
-#include "libMultModulo.h"
+#include "lib.h"
 
 pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;
 
