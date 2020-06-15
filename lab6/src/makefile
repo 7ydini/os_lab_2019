@@ -3,14 +3,14 @@ CCFLAGS=-I.
 
 all : client server
 
-client : libMultModulo.o libMultModulo.h
-	$(CC) -o client libMultModulo.o client.c -lpthread $(CCFLAGS)
+client : lib.o lib.h
+	$(CC) -o client lib.o client.c -lpthread $(CCFLAGS)
 
-server : libMultModulo.o libMultModulo.h
-	$(CC) -o server libMultModulo.o server.c -lpthread $(CCFLAGS)
+server : lib.o lib.h
+	$(CC) -o server lib.o server.c -lpthread $(CCFLAGS)
 
-libMultModulo.o : libMultModulo.h
-	$(CC) -o libMultModulo.o -c libMultModulo.c $(CCFLAGS)
+libMultModulo.o : lib.h
+	$(CC) -o lib.o -c lib.c $(CCFLAGS)
 
 clean :
-	rm client server libMultModulo.o
+	rm client server lib.o
