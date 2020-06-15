@@ -209,7 +209,7 @@ int main(int argc, char **argv)
         pthread_mutex_lock(&mut);
         uint64_t result = 0;
         pthread_join(threads[i], (void **)&result);
-        total =  MultModulo(total, result, mod);
+        total =  Multi(total, result, mod);
         pthread_mutex_unlock(&mut);
       }
 
