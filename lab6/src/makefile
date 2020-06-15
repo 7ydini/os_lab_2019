@@ -9,7 +9,7 @@ client : lib.o lib.h
 server : lib.o lib.h
 	$(CC) -o server lib.o server.c -lpthread $(CCFLAGS)
 
-libMultModulo.o : lib.h
+lib.o : lib.h
 	$(CC) -o lib.o -c lib.c $(CCFLAGS)
 
 clean :
