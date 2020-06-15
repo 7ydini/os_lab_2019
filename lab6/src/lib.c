@@ -1,4 +1,4 @@
-#include "libMultModulo.h"
+#include "lib.h"
 uint64_t MultModulo(uint64_t a, uint64_t b, uint64_t mod) {
   uint64_t result = 0;
   a = a % mod;
