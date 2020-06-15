@@ -14,7 +14,7 @@
 
 #include "pthread.h"
 
-#include "libMultModulo.h"
+#include "lib.h"
 
 struct FactorialArgs {
   uint64_t begin;
